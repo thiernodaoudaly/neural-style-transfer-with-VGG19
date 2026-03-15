@@ -1,30 +1,31 @@
-# Transfert de Style Neuronal
+# Neural Style Transfer with VGG19
 
 ## Description
-Ce code propose une implémentation en **PyTorch** de l’article :  
+This code provides a **PyTorch implementation** of the paper:  
 "[Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)",  
-par **Leon A. Gatys et al.**  
+by **Leon A. Gatys et al.**  
 
-L’application peut être exécutée localement soit via une application Streamlit (`app.py`), soit en modifiant les arguments d’entrée d’un **script Python** (`main.py`).  
+The application can be run locally either through a **Streamlit application** (`app.py`) or by modifying the input arguments of a **Python script** (`main.py`).
 
-## Bref descriptif
-Le **Neural Style Transfer (NST)** est une technique d’apprentissage profond qui permet de générer une image combinant :  
-- le **contenu** d’une image (*content image*),  
-- avec le **style** d’une autre image (*style image*).  
+## Brief Overview
+**Neural Style Transfer (NST)** is a deep learning technique that generates an image combining:
+- the **content** of one image (*content image*),
+- with the **style** of another image (*style image*).
 
-## Installation avec Conda
-Ces instructions supposent que [Anaconda](https://www.anaconda.com/products/individual) ou [Miniconda](https://docs.conda.io/en/latest/miniconda.html) soient installés sur votre machine.  
+## Installation with Conda
+These instructions assume that **Anaconda** or **Miniconda** is already installed on your machine.
 
-1. Ouvrez **Anaconda Prompt** et clonez ce dépôt à l’emplacement souhaité :  
+1. Open **Anaconda Prompt** and clone this repository to your desired location:
    ```bash
-   cd <votre_dossier>
+   cd <your_folder>
    git clone https://github.com/thiernodaoudaly/neural-style-transfer-app
    cd neural-style-transfer-app
-2. Créez l’environnement avec les dépendances fournies dans environment.yml :
+   ```
+2. Create the environment using the dependencies provided in env.yml:
    ```bash
    conda env create -f env.yml
-3. Activez l’environnement :
+   ```
+3. Activate the environment:
    ```bash
    conda activate nst-env
-
-
+   ```

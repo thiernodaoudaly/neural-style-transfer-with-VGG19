@@ -1,0 +1,34 @@
+# Model Notes – Neural Style Transfer
+
+## Overview
+
+This project implements neural style transfer using a pretrained VGG19 network.
+
+The goal is to generate an image that preserves the content of one image while adopting the artistic style of another.
+
+## Architecture
+
+The method uses a pretrained VGG19 convolutional network to extract features from images.
+
+Two types of representations are used:
+
+- Content representations
+- Style representations
+
+## Content Loss
+
+Content loss measures the difference between the content features of the generated image and the original content image.
+
+## Style Loss
+
+Style is represented using Gram matrices computed from feature maps.
+
+These matrices capture correlations between feature channels.
+
+## Optimization
+
+The generated image is initialized as noise and iteratively optimized using gradient descent.
+
+The objective minimizes:
+
+Total Loss = Content Loss + Style Loss
