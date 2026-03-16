@@ -17,8 +17,7 @@ These instructions assume that **Anaconda** or **Miniconda** is already installe
 
 1. Open **Anaconda Prompt** and clone this repository to your desired location:
    ```bash
-   cd <your_folder>
-   git clone https://github.com/thiernodaoudaly/neural-style-transfer-app
+   git clone https://github.com/thiernodaoudaly/neural-style-transfer-app-with-VGG19
    cd neural-style-transfer-app
    ```
 2. Create the environment using the dependencies provided in env.yml:
